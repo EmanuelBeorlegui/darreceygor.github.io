@@ -35,12 +35,13 @@ function crearCaptcha(){
 verificar.addEventListener('click' , () =>{
     let valor = input.value;
     if (valor == ''){
-        document.querySelector(".captcha-body").innerHTML = "Por favor Ingrese el codigo";
+        console.log("ingrese el codigo");
     }
     else if(valor == codigo.textContent){
-        document.querySelector(".captcha-body").innerHTML = "Codigo Valido ";
+        console.log("codigo validado");
     }
     else{
-        document.querySelector(".captcha-body").innerHTML = "Codigo invalido";
+        console.log("codigo invalido");
     }
 });
+
